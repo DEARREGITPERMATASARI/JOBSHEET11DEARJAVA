@@ -5,6 +5,8 @@
  */
 package LATIHAN;
 
+import java.util.Locale;
+
 /**
  *
  * @author Nita
@@ -15,7 +17,7 @@ public class CobaOperasiString {
         String identitas = "DEAR REGITA PERMATASARI / X RPL 5 / 11 ";
                 System.out.println("Identitas : " + identitas);
                 
-        String x = "";
+        String x = "0perasi";
         System.out.println("isi variabel x :" +x);
         System.out.println("\"" + x + "\" panjang karakter =" + x.length());
         
@@ -57,9 +59,9 @@ public class CobaOperasiString {
          System.out.println("isi variabel x besar semua :" + x.toUpperCase());
          System.out.println("isi variabel x kecil semua :" + x.toLowerCase());
 
-            String t = "operasi string";
+            String t = "    operasi string    ";
             System.out.println("isi variabel t : \"" + t + "\"" );
-            System.out.println("isi variabel t tanpa spasi : \"" + t.trim() + "\"");
+            System.out.println("isi variabel t tanpa spasi : \""+ t.trim() +"\"");
             
             System.out.println("gabungkan isi variabel x dan r :" + x.concat(r));
             
@@ -83,11 +85,14 @@ public class CobaOperasiString {
                 String [] arrTr = tclean.split("r") ;
                 System.out.println("pecah berdasarkan huruf 'r' di variabel tclean :" );
                   for (int i=0; i<arrTr.length; i++)
-                      System.out.println(arrTr[1]);
+                      System.out.println(arrTr[i]);
             
             
             
-            
+           double d = 1545454000;
+           System.out.println(String.format("Uang saya %, .4f" , d));
+           
+           System.out.println(String.format(Locale.forLanguageTag("in-ID"), "Uang saya Rp %,.2f", d));
             
             
             
