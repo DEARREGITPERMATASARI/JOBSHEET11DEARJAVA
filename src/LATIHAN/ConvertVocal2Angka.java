@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package LATIHAN;
-
+ import java.util.Scanner;
 /**
  *
  * @author Nita
@@ -21,6 +21,17 @@ public class ConvertVocal2Angka {
 String identitas = "DEAR REGITA PERMATASARI / X RPL 5 / 11";
     tampilJudul(identitas);
     
+     }
+    private static String tampilInput() {
+        Scanner scanner = new Scanner (System.in);
+        
+        System.out.println("Masukkan Kalimat : ");
+        String kalimat = scanner.nextLine();
+        System.out.println("Kalimat Asli : " + kalimat);
+
+return kalimat;        
+    }
     
-}
+        String kalimat = tampilInput() ;
+        
 }
